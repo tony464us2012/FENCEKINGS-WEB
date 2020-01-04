@@ -1,0 +1,18 @@
+.img-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 5px;
+}
+
+.img-gallery > div {
+    height: 150px
+}
+
+.img-gallery > div img {
+ height: 100%;
+ width: 100%
+}
+
+.fence-item {
+    margin-top: 2%
+}
