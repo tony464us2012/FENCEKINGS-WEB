@@ -1,38 +1,9 @@
-/* .img-cont {
-    height: 40%;
-    width: 70%;
-    align-content: center;
-    border: 2px solid black
+
+.service-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
 }
 
-.img-cont img {
-    width: 100%;
-    height: auto
+article img {
+    width: 100%
 }
-
-.nav-item h4 {
-    font-family: 'Bebas Neue', cursive;
-    margin-bottom: 0rem;
-    font-size: 1.2em
-}
-
-.nav-item span {
-    font-family: 'Yeseva One', cursive;
-    margin: 0;
-    font-size: 1rem
-}
-
-
-#nav ul li {
-    font-family: 'Bebas Neue', cursive;
-}
-
-.footer-item h3 {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 2rem
-}
-
-.footer-item p {
-    font-family: 'Yeseva One', cursive;
-} */
-
