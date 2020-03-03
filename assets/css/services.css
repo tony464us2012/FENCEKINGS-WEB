@@ -2,8 +2,22 @@
 .service-container {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: 1rem
 }
 
-article img {
+#sidebar1, #sidebar2 {
+    padding: 1rem .5rem 0 .8rem
+}
+
+article img, .fence-item img {
     width: 100%
+}
+
+.fence-item {
+    margin-bottom: 1.5rem;
+    font-size: .9rem
+}
+
+header h2 {
+    margin-bottom: 1.3rem
 }
