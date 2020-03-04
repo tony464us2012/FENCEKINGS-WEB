@@ -182,6 +182,10 @@ input, select, textarea {
 		padding: 1em 0 1em 2em;
 	}
 
+	.border {
+		border: 2px solid black
+	}
+
 /* Container */
 
 	.container {
@@ -637,91 +641,16 @@ input, select, textarea {
 				#nav > ul > li > ul {
 					display: none;
 				}
-
-/* Dropotron */
-
-	.dropotron {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0)), url("images/bg01.png");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0)), url("images/bg01.png");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0)), url("images/bg01.png");
-		background-image: linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0)), url("images/bg01.png");
-		background-color: #333;
-		border-radius: 5px;
-		color: #fff;
-		min-width: 10em;
-		padding: 1em 0;
-		text-align: center;
-		box-shadow: 0 1em 1em 0 rgba(0, 0, 0, 0.5);
-		list-style: none;
-	}
-
-		.dropotron > li {
-			line-height: 2em;
-			padding: 0 1.1em 0 1em;
-		}
-
-			.dropotron > li > a {
-				color: #c0c0c0;
-				text-decoration: none;
-				border: 0;
+				header h2, 
+			#nav ul li,
+			.box h3, .footer-item h3, .fence-item h3, article h3 {
+				font-family: 'Yeseva One', Arial, Helvetica, sans-serif
 			}
 
-			.dropotron > li.active > a, .dropotron > li:hover > a {
-				color: #fff;
-			}
-
-		.dropotron.level-0 {
-			border-radius: 0 0 5px 5px;
-			font-size: 0.9em;
-			padding-top: 0;
-			margin-top: -1px;
-		}
 
 /* Banner */
 
-	#banner {
-		background-image: url("../../images/wood-background.jpg");
-		background-size: cover;
-		height: 28em;
-		text-align: center;
-		position: relative;
-	}
-
-		#banner header {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			background: #212121;
-			background: rgba(27, 27, 27, 0.75);
-			color: #fff;
-			padding: 1.5em 0;
-		}
-
-			#banner header h2 {
-				display: inline-block;
-				margin: 0;
-				font-size: 1.25em;
-				vertical-align: middle;
-			}
-
-				#banner header h2 em {
-					opacity: 0.75;
-				}
-
-				#banner header h2 a {
-					border-bottom-color: rgba(255, 255, 255, 0.5);
-				}
-
-					#banner header h2 a:hover {
-						border-bottom-color: transparent;
-					}
-
-			#banner header .button {
-				vertical-align: middle;
-				margin-left: 1em;
-			}
-
+	
 /* Wrapper */
 
 	.wrapper {
@@ -849,7 +778,8 @@ input, select, textarea {
 /* Copyright */
 .copyright {
 	background-color: lightgray;
-	padding-top: 1rem
+	padding: 1rem;
+	margin-bottom: 0
 }
 .menu {
 	width: 80%;
