@@ -647,6 +647,19 @@ input, select, textarea {
 				font-family: 'Yeseva One', Arial, Helvetica, sans-serif
 			}
 
+			@media (max-width: 768px) {
+				#nav {
+					display: none
+				}
+				.footer-container {
+					display: block !important
+				}
+				.footer-item:first-child {
+					border: 2px solid black;
+					margin: 0 auto
+				}
+			}
+
 
 /* Banner */
 
@@ -685,6 +698,16 @@ input, select, textarea {
 
 				.wrapper.style3 .button:hover {
 					color:  #eea825 !important;
+				}
+
+				#page-wrapper {
+				max-width: 1440px
+				}
+
+				@media ( min-width: 1440px) {
+					#page-wrapper {
+						margin: 0 auto
+					}
 				}
 
 /* CTA */
