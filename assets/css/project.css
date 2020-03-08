@@ -1,3 +1,8 @@
+.project-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2rem
+}
 .img-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -13,6 +18,27 @@
  width: 100%
 }
 
+.border1 {
+    border: 2px solid red !important
+}
+
 .fence-item {
     margin-top: 2rem
+}
+
+#sidebar {
+    padding: 1rem .5rem 0 .8rem
+}
+
+@media(max-width: 425px) {
+    .project-container {
+        display: block
+    }
+    .img-gallery {
+        display: block;
+    }
+    .img-gallery > div {
+        margin-bottom: .5rem;
+        height: 175px
+    }
 }

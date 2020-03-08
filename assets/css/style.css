@@ -9,7 +9,6 @@ html, body {
 
 #nav img {
     margin-left: 4rem;
-    margin-bottom: .5rem
 }
 
 
@@ -168,17 +167,37 @@ header a {
 
 
 @media (max-width: 768px) {
+    #banner h1 {
+        font-size: 3rem;
+        margin-top: 2rem
+    }
     header h2 {
         font-size: 1.5rem
     }
     .logo {
         margin-bottom: 1rem
     }
+    .card:last-child {
+        margin-top: 2rem
+    }
+    .work-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
 }
 
 @media (max-width: 425px) {
+    
+    .card-container > div.card {
+        margin-bottom: 1rem;
+        margin-top: 0
+    }
     .menu li {
         width: 98%
+    }
+    .work-container {
+        display: block
     }
     
 }
