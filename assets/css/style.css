@@ -60,7 +60,7 @@ html, body {
     margin: 0;
     text-transform: uppercase;
 }
-#banner h1 span {
+#banner h1 .span2 {
     color: orange
 }
 .active {

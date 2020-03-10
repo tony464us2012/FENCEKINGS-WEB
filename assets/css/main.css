@@ -602,11 +602,11 @@ input, select, textarea {
 
 		.logo-container h6 {
 			color: white;
-			margin-top: -.1rem !important;
-			margin-right: -.3rem;
+			margin-right: -.8rem;
 			text-align: right;
 			font-family: "Frank Ruhl Libre", Arial, Helvetica, sans-serif;
-			font-weight: 600
+			font-weight: 600;
+			text-transform: uppercase;
 		}
 		.nav-links {
 			margin-top: 1rem
@@ -671,9 +671,6 @@ input, select, textarea {
 					margin: 0 auto
 				}
 			}
-
-
-/* Banner */
 
 	
 /* Wrapper */
