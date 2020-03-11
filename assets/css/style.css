@@ -61,7 +61,14 @@ html, body {
     text-transform: uppercase;
 }
 #banner h1 .span2 {
-    color: orange
+    color: orange;
+    opacity: 0
+}
+#banner h1 .span1 {
+    opacity: 0
+}
+#banner h1 .span3 {
+    opacity: 0
 }
 .active {
   background-color: #717171;
