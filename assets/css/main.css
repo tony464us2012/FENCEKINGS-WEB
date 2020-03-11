@@ -710,10 +710,10 @@ input, select, textarea {
 				}
 
 				#page-wrapper {
-				max-width: 1440px
+				max-width: 1600px
 				}
 
-				@media ( min-width: 1440px) {
+				@media ( min-width: 1600px) {
 					#page-wrapper {
 						margin: 0 auto
 					}
