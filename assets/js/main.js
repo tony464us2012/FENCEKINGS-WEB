@@ -33,8 +33,8 @@
 
 		// Bar.
 			$(
-				'<div id="titleBar">' +
-					'<a href="#navPanel" class="toggle"></a>' +
+				'<div id="titleBar" style="z-index:-1">' +
+					'<a href="#navPanel" class="toggle" "></a>' +
 					'<span class="title">' + 'Fence Kings' + '</span>' +
 				'</div>'
 			)
