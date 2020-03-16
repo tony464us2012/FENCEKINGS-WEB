@@ -32,13 +32,13 @@
 	// Nav.
 
 		// Bar.
-			$(
-				'<div id="titleBar" style="z-index:-1">' +
-					'<a href="#navPanel" class="toggle" "></a>' +
-					'<span class="title">' + 'Fence Kings' + '</span>' +
-				'</div>'
-			)
-				.appendTo($body);
+			// $(
+			// 	'<div id="titleBar" style="z-index:-1">' +
+			// 		'<a href="#navPanel" class="toggle"></a>' +
+			// 		'<span class="title">' + 'Fence Kings' + '</span>' +
+			// 	'</div>'
+			// )
+			// 	.appendTo($body);
 
 		// Panel.
 			$(

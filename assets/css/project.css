@@ -18,6 +18,11 @@
  width: 100%
 }
 
+.img-gallery > div img:hover {
+    transition: ease-in-out 1s;
+    transform: scale(2);
+}
+
 .border1 {
     border: 2px solid red !important
 }
