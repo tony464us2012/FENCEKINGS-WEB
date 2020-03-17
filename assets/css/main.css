@@ -1080,6 +1080,10 @@ input, select, textarea {
 					#footer form .actions li:first-child {
 						padding-left: 0;
 					}
+					.footer-item p {
+						font-family: Arial, Helvetica, sans-serif;
+						font-size: 1.2rem
+					}
 
 		/* Nav */
 
@@ -1410,6 +1414,10 @@ input, select, textarea {
 			}
 			.footer-item h3 {
 				font-size: 1.5rem !important
+			}
+			.footer-item p {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 1.3rem
 			}
 			input[type='text'] {
 				width: 100% !important

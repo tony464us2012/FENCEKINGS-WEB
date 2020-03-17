@@ -36,7 +36,7 @@ html, body {
 }
 
 .nav-item span {
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
     margin: 0;
     font-size: 1rem
 }
@@ -54,8 +54,8 @@ html, body {
 }
 
 #banner h1 {
-    font-family: 'Maiden Orange', Arial, Helvetica, sans-serif;
-    font-size: 4rem;
+    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+    font-size: 3.5rem;
     color: white;
     margin: 0;
     text-transform: uppercase;
@@ -86,7 +86,7 @@ html, body {
 header h2, 
 #nav ul li,
 .box h3, .footer-item h3, .fence-item h3, article h3 {
-    font-family: 'Yeseva One', Arial, Helvetica, sans-serif
+    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
 }
 
 .box h3, .footer-item h3, .fence-item h3, article h3 {
@@ -94,7 +94,7 @@ header h2,
 }
 
 .box p {
-    font-family: 'Inria Serif', serif
+    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
 }
 
 
@@ -111,15 +111,20 @@ header h2,
         width: 250px;
         height: 250px;
         background-color: whitesmoke;
-        font-family: 'Maiden Orange', Arial, Helvetica, sans-serif;
         z-index: 9999;
         padding: 2%
     }
     .card h3 {
-        margin: 7px 0
+        margin: 7px 0;
+        font-size: 1.5rem;
+        font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
     }
     .card i {
-        font-size: 2rem
+        font-size: 1.8rem
+    }
+    .card p {
+        font-size: .9rem;
+        font-family: Arial, Helvetica, sans-serif
     }
     .card:nth-child(2) {
         margin: 0 45px
@@ -131,7 +136,8 @@ header h2,
     /* Header */
     .type-container {
         text-align: center;
-        margin: 5rem 0
+        margin: 5rem 0;
+        font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
     }
 
     /* Work Section */
@@ -151,20 +157,18 @@ header h2,
     }
 
 .fence-item p, .footer-item p, .inner p, .links li {
-    font-family: 'Maiden Orange', serif
-}
-
-.footer-item p {
-    font-size: 1rem !important
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .inner h3 {
+    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
     margin: 5px 0;
     font-weight: 200;
 }
 
 .inner p {
-    font-size: 1rem
+    font-size: 1rem;
+    font-weight: 100
 }
 
 header a {
