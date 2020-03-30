@@ -560,7 +560,17 @@ input, select, textarea {
 		.mobile-logo {
 			opacity: 1
 		}
+		#navPanel {
+			z-index: 999
+		}
+
 	}
+	@media (max-width: 425px) {
+		.mobile-logo {
+			left: 25%
+		}
+		}
+
 
 	#header {
 		text-align: center;
@@ -1273,6 +1283,7 @@ input, select, textarea {
 				-webkit-transform: translateX(0);
 				-ms-transform: translateX(0);
 				transform: translateX(0);
+				position: fixed
 			}
 
 	}
@@ -1417,7 +1428,7 @@ input, select, textarea {
 			}
 			.footer-item p {
 				font-family: Arial, Helvetica, sans-serif;
-				font-size: 1.3rem
+				font-size: .9rem
 			}
 			input[type='text'] {
 				width: 100% !important
