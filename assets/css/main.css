@@ -187,6 +187,15 @@ input, select, textarea {
 		border: 2px solid black
 	}
 
+	.announcement {
+		background-color: orange;
+		height: 1.7rem;
+		color: white;
+		font-size: .5rem;
+		font-weight: 600;
+		text-align: center
+	}
+
 /* Container */
 
 	.container {
@@ -386,6 +395,10 @@ input, select, textarea {
 		ul.links li {
 			line-height: 2.5em;
 			padding-left: 0;
+		}
+
+		ul.links li a:last-child {
+			background-color: orange;
 		}
 
 /* Icons */

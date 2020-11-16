@@ -9,9 +9,9 @@
     grid-gap: 5px;
 }
 
-.img-gallery > div {
-    height: 150px
-}
+/* .img-gallery > div {
+    height: 100%
+} */
 
 .img-gallery > div img {
  height: 100%;
@@ -28,6 +28,10 @@
 
 #sidebar {
     padding: 1rem .5rem 0 .8rem
+}
+
+.modal-content {
+    height: auto
 }
 
   
