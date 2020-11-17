@@ -3,6 +3,7 @@
     grid-template-columns: 2fr 1fr;
     grid-gap: 2rem
 }
+
 .img-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -13,9 +14,9 @@
     height: 100%
 } */
 
-.img-gallery > div img {
- height: 100%;
- width: 100%
+.img-gallery>div img {
+    height: 100%;
+    width: 100%
 }
 
 .border1 {
@@ -34,31 +35,43 @@
     height: auto
 }
 
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
 
-  @media only screen and (min-width: 993px){
-      .container {
-          width: 85% !important;
-      }
-  }
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 85% !important;
+    }
+}
 
 @media(max-width: 425px) {
     .project-container {
         display: block
     }
+
     .img-gallery {
         display: block;
     }
-    .img-gallery > div {
+
+    .img-gallery>div {
         margin-bottom: .5rem;
         height: 175px
     }
