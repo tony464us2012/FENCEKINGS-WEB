@@ -50,15 +50,17 @@ body {
     font-size: 1rem
 }
 
-.slider {
-    height: 35vh !important;
-    padding-left: 0 !important
+.container {
+    position: relative
 }
 
-.slides {
-    width: 100% !important;
-    height: 100% !important
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
 }
+
 
 .active {
     background-color: #333;
@@ -69,10 +71,10 @@ body {
     text-align: center
 }
 
-.container {
+/* .container {
     display: flex;
     flex-wrap: wrap;
-}
+} */
 
 header h2,
 #nav ul li,
@@ -102,25 +104,20 @@ article h3 {
 /* card */
 .card-container {
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-top: -2rem;
     z-index: 2;
-
+    margin-top: 5rem;
 }
 
 .card {
     width: 25%;
-    background-color: whitesmoke;
+    background-color: #eea825 !important;
+    color: white;
     z-index: 99;
     padding: 2%;
-    margin-top: 0
 }
 
-.card:nth-child(1),
-.card:nth-child(2) {
-    margin-right: 2rem
-}
 
 .card h3 {
     margin: 10px 0;
