@@ -133,10 +133,6 @@ table {
 	border-spacing: 0;
 }
 
-body {
-	-webkit-text-size-adjust: none;
-}
-
 mark {
 	background-color: transparent;
 	color: inherit;
@@ -730,7 +726,6 @@ ul.actions.fit.stacked {
 	cursor: default;
 	background-color: #333 !important;
 	padding-top: 5px;
-	border-bottom: 5px solid orange
 }
 
 .link {
