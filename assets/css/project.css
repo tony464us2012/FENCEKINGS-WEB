@@ -1,18 +1,28 @@
 .project-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 2rem
+    padding: 3rem 1rem;
+
+}
+
+.project-item {
+    display:block;
+    margin: 2rem auto
+}
+
+.fence-item h3 {
+    font-size: 2rem;
 }
 
 .img-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 5px;
+    justify-items: center;
 }
 
-/* .img-gallery > div {
-    height: 100%
-} */
+.img-gallery > div {
+    height: 200px;
+    width: 100%;
+}
 
 .img-gallery>div img {
     height: 100%;

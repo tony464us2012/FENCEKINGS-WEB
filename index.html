@@ -19,7 +19,7 @@
 	 <meta name="og:type" content="website"/>
 	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 	<link
-		href="https://fonts.googleapis.com/css?family=Bebas+Neue|Yeseva+One|Maiden+Orange|Frank+Ruhl+Libre&display=swap"
+		href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Yeseva+One|Maiden+Orange|Frank+Ruhl+Libre&display=swap"
 		rel="stylesheet">
 	<script src="https://kit.fontawesome.com/635db82daf.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -27,8 +27,6 @@
 
 <body class="is-preload">
 	<div id="page-wrapper">
-		<!-- Nav -->
-		<!-- <img class="mobile-logo" src="/images/logo.png" alt="mobile-logo" height="25px" width="25px"> -->
 		<div id="nav">
 			<div class="logo-container">
 				<img src="/images/fig-logo.png" alt="Fence King Logo" id="logo">
@@ -48,68 +46,57 @@
 			</ul>
 		</div>
 		<div>
-				<div className="container">
-					<div class="caption center-align">
-						<h3>Custom Fencing!</h3>
-						<h5 class="light grey-text text-lighten-3">We match our competitors.</h5>
+				<div class="main-container">
+					<div class="caption">
+						<h3 class="light white-text text-lighten-3">Fence Contractor & Fabricator</h3>
 					</div>
-					<img src="/images/main-pic.jpg" alt="picket" width="100%"> <!-- random image -->
 				</div>
 		</div>
-		<!-- <div class="card-container">
-			<div class="card z-depth-4">
-				<i class="far fa-address-card"></i>
-				<h3>EXPERIENCE</h3>
-				<p>We bring over 30 years of experience. Our long and dedicated fencing experience guides us to provide
-					the best product.</p>
-			</div>
-			<div class="card z-depth-4">
-				<i class="far fa-newspaper"></i>
-				<h3>QUALITY</h3>
-				<p>All of our projects are assured high in standard and the highest quality.</p>
-			</div>
-			<div class="card z-depth-4">
-				<i class=" fas fa-wrench"></i>
-				<h3>SERVICE</h3>
-				<p>Our highest priority to provide a superb customer experience. Satisfaction and great service is our
-					goal.</p>
-			</div>
-		</div> -->
-		<!-- Gigantic Heading -->
-		<div class="type-container">
-			<h3>WE DO ALL TYPES OF FENCES AT THE BEST PRICE</h3>
-			<p>We also do custom fabrication, gates, motor installations and more..</p>
-		</div>
-		<!-- Posts -->
 		<div class="work-container">
-			<div class="work-item">
-				<img src="images/gates.jpg" alt="chainlink-gates" />
-				<div class="inner">
-					<h4>Gates</h4>
-					<p>We provide mass quantity of chainlink gates to businesses and/or through special orders at the
-						desired size.</p>
+			<div class="work">
+				<div class="work-front">
+					<img src="images/gates.jpg" alt="chainlink-gates" />
+				</div>
+				<div class="work-back">
+					<div class="description">
+						<h5>Gates</h5>
+						<p>We provide mass quantity of chainlink gates to businesses and/or through special orders at the
+							desired size.</p>
+					</div>
 				</div>
 			</div>
-			<div class="work-item">
-				<img src="images/welding2.jpg" alt="Welding" />
-				<div class="inner">
-					<h4>Custom Fabrication</h4>
-					<p>Custom gates, AC cages, and picket panel are a few examples of the welding service we provide.
-					</p>
+			<div class="work">
+				<div class="work-front">
+					<img src="images/welding2.jpg" alt="Welding" />
+				</div>
+				<div class="work-back">
+					<div class="description">
+						<h5>Custom Fabrication</h5>
+						<p>Custom gates, AC cages, and picket panel are a few examples of the welding service we provide.
+						</p>
+					</div>
 				</div>
 			</div>
-			<div class="work-item">
-				<img src="images/residential-gate.JPG" alt="" />
-				<div class="inner">
-					<h4>Residential</h4>
-					<p>We provide residential fence installation of any type of fence.</p>
+			<div class="work">
+				<div class="work-front">
+					<img src="images/chainlink.jpg" alt="Chainlink" />
+				</div>
+				<div class="work-back">
+					<div class="description">
+						<h5>Chainlink</h5>
+						<p>We provide chainlink fence installation of any size and height.</p>
+					</div>
 				</div>
 			</div>
-			<div class="work-item">
-				<img src="images/Industrial.jpg" alt="" />
-				<div class="inner">
-					<h4>Commercial</h4>
-					<p>We also provide commercial fence installation that meets any requirements.</p>
+			<div class="work">
+				<div class="work-front">
+					<img src="images/commercial.jpg" alt="Commercial" />
+				</div>
+				<div class="work-back">
+					<div class="description">
+						<h5>Commercial</h5>
+						<p>We also provide commercial fence installation that meets any requirements.</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -181,11 +168,7 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	<script>
-		$(document).ready(function () {
-			$('.slider').slider();
-		});
-	</script>
+	
 </body>
 
 </html>

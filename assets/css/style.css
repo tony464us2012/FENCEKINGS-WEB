@@ -66,12 +66,12 @@ body {
 }
 
 .navigation ul {
-    margin-bottom: 0 !important;
+    margin-bottom: 2 !important;
 }
 
 .nav-links li a {
     color: white;
-    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
     font-size: 1.2rem;
     padding: 1rem;
     text-decoration: none;
@@ -93,15 +93,35 @@ body {
 }
 
 
-.container {
-    position: relative
+.main-container {
+    display: flex;
+    height: 35rem;
+    background-image: url(../../images/gate2.JPG), linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267));
+    background-size: cover;
+    background-position: 50% 55%;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    -webkit-animation: kenburns-top 4s ease-in-out both;
+    animation: kenburns-top 4s ease-in-out both;
 }
 
+
 .caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
+   text-align: center;
+   
+}
+
+.caption h3 {
+    color: white;
+    font-size: 3rem;
+    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding: .5rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 3px black;
+
 }
 
 
@@ -114,10 +134,6 @@ body {
     text-align: center
 }
 
-/* .container {
-    display: flex;
-    flex-wrap: wrap;
-} */
 
 header h2,
 #nav ul li,
@@ -129,7 +145,6 @@ article h3 {
 }
 
 .box h3,
-.fence-item h3,
 article h3 {
     font-size: 2rem;
     text-align: center;
@@ -190,19 +205,83 @@ article h3 {
 /* Work Section */
 .work-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 0 6%;
-    margin-bottom: 2rem
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 2rem;
+    margin: 2rem 5%;
+    justify-content: center;
 }
 
-.inner {
-    padding: 5%;
-}
-
-.work-item img {
+.work {
     width: 100%;
-    height: 200px
+    height: 250px;
+    perspective: 1000px;
+    position: relative;
+  }
+
+  @media (max-width: 450px) {
+    .work {
+      margin-bottom: 1rem
+    }
+  }
+    
+  
+  .work-front,
+  .work-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform 1s;
+  }
+  
+  .work-front {
+    z-index: 2;
+  }
+  
+  .work-back {
+    z-index: 1;
+    transform: rotateY(-180deg);
+  }
+  .work:hover .work-front {
+    transform: rotateY(180deg);
+  }
+  
+  .work:hover .work-back {
+    transform: rotateY(0deg);
+  }
+  
+  .work img,
+  .work-back,
+  .work-front {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .work .description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    background-color: rgb(126, 5, 126);
+    color: #fff;
+  }
+  
+  .work .description h5 {
+    text-align: center;
+    font-family: 'Roboto-Condensed', Helvetica, sans-serif;
 }
+  
+  .work .description p {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
 
 .fence-item p,
 .inner p,
@@ -227,6 +306,13 @@ header a {
 
 .button {
     margin-top: 1.5rem
+}
+
+.bottom {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 
@@ -301,3 +387,32 @@ header a {
     }
 
 }
+@-webkit-keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(.75) translateY(0);
+              transform: scale(.75) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1) translateY(-15px);
+              transform: scale(1) translateY(-15px);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+  @keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(.75) translateY(0);
+              transform: scale(.75) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1) translateY(-15px);
+              transform: scale(1) translateY(-15px);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+  
