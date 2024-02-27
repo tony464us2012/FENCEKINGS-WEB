@@ -1,5 +1,19 @@
+.project-intro {
+    height: 50vh;
+    background-image: url(../../images/IMG_4330.jpg), linear-gradient(rgba(0, 0, 0, 0.367), rgba(0, 0, 0, 0.367));
+    background-size: cover;
+    background-position: center center;
+}
+
+.project-intro h1 {
+
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
 .project-container {
-    padding: 3rem 1rem;
+    padding: 0 1.5rem 3rem;
 
 }
 
@@ -7,29 +21,9 @@
     display:block;
 }
 
-.fence-item {
-    padding: 0 1.5rem
-}
 
 .fence-item h3 {
     font-size: 2rem;
-}
-
-.img-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 5px;
-    justify-items: center;
-}
-
-.img-gallery > div {
-    width: 100%;
-    height: 250px
-}
-
-.img-gallery>div img {
-    height: 100%;
-    width: 100%
 }
 
 .border1 {
@@ -47,6 +41,118 @@
 .modal-content {
     height: auto
 }
+
+.image-mosaic {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 240px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    font-size: 3rem;
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-transition: all .3s ease-in-out   ;
+    -moz-transition: all .3s ease-in-out   ;
+    -ms-transition: all .3s ease-in-out   ;
+    -o-transition: all .3s ease-in-out   ;
+    transition: all .3s ease-in-out   ;
+}
+   .card:hover {
+       -webkit-transform: scale(1.05);
+       -moz-transform: scale(1.05);
+       -o-transform: scale(1.05)/**/;
+       transform: scale(1.05);
+   }
+   
+  .image-mosaic .card:first-child {
+    background-image: url(../../images/Chainlink3.jpg);
+   }
+
+   .image-mosaic .card:nth-child(2) {
+    background-image: url(../../images/enclosure02.jpg);
+    background-position: center center;
+   }
+
+    .image-mosaic .card:nth-child(3) {
+      background-image: url(../../images/PVC.jpg);
+    }
+    .image-mosaic .card:nth-child(4) {
+      background-image: url(../../images/horizontal02.jpg);
+    }
+    .image-mosaic .card:nth-child(5) {
+      background-image: url(../../images/main-pic.jpg);
+    }
+    .image-mosaic .card:nth-child(6) {
+      background-image: url(../../images/chainlink02.jpg);
+    }
+    .image-mosaic .card:nth-child(6) {
+      background-image: url(../../images/chainlink02.jpg);
+    }
+    .image-mosaic .card:nth-child(7) {
+      background-image: url(../../images/Wood2.JPG);
+    }
+    .image-mosaic .card:nth-child(8) {
+        background-image: url(../../images/IMG_2260\ -\ Copy.PNG);
+      }
+    .image-mosaic .card:nth-child(9) {
+        background-image: url(../../images/PVC3.JPG);
+      }
+    .image-mosaic .card:nth-child(10) {
+        background-image: url(../../images/picket.JPG);
+      }
+    .image-mosaic .card:nth-child(11) {
+        background-image: url(../../images/Wood7.jpg);
+      }
+    .image-mosaic .card:nth-child(12) {
+        background-image: url(../../images/Picket3.jpg);
+      }
+    .image-mosaic .card:nth-child(13) {
+        background-image: url(../../images/Wood6.jpg);
+      }
+    .image-mosaic .card:nth-child(14) {
+        background-image: url(../../images/Metal4.jpg);
+      }
+    .image-mosaic .card:nth-child(15) {
+        background-image: url(../../images/chainlink01.jpg);
+      }
+    .image-mosaic .card:nth-child(16) {
+        background-image: url(../../images/Picket2.JPG);
+      }
+    .image-mosaic .card:nth-child(17) {
+        background-image: url(../../images/chainlink-pic.jpg);
+      }
+    .image-mosaic .card:nth-child(18) {
+        background-image: url(../../images/battingCage02.jpg);
+      }
+    .image-mosaic .card:nth-child(19) {
+        background-image: url(../../images/custom01.jpg);
+      }
+  
+  @media screen and (min-width: 600px) {
+    .card-tall {
+      grid-row: span 2 / auto;
+    }
+  
+    .card-wide {
+      grid-column: span 2 / auto;
+    }
+  }
 
 
 @-webkit-keyframes fade {

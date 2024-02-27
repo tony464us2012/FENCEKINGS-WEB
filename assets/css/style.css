@@ -3,7 +3,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box !important;
-    background-color: whitesmoke
+    background-color: whitesmoke;
+    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
 }
 
 /* Logo */
@@ -61,16 +62,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #eea825;
     padding: .2rem
 }
 
-.navigation ul {
-    margin-bottom: 2 !important;
-}
-
 .nav-links li a {
-    color: white;
+    color: black;
+    font-weight: bolder;
     font-family: 'Roboto Condensed', Helvetica, sans-serif;
     padding: 1rem;
     text-decoration: none;
@@ -87,40 +84,88 @@ body {
     cursor: pointer;
 }
 
-.navigation ul li a:hover {
-    color: black !important
+.main-container,
+.services {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
-
 
 .main-container {
-    display: flex;
-    height: 35rem;
-    background-image: url(../../images/gate2.JPG), linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267));
-    background-size: cover;
-    background-position: 50% 55%;
-    background-repeat: no-repeat;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0;
-    -webkit-animation: kenburns-top 4s ease-in-out both;
-    animation: kenburns-top 4s ease-in-out both;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.39)), url(../../images/LargeBattingCage.jpg);
+    padding-top: 15%;
 }
 
+.services {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.39)), url(../../images/LargeHorizonal.jpg);
+    padding: 10% 2rem ;
+    background-size: cover;
+    position: relative;
+    background-color: white;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-weight: bold;
+}
+
+.services-list ul {
+  list-style: disc;
+}
+
+.services-list ul li {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 3px black;
+}
 
 .caption {
-   text-align: center;
-   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 4rem
 }
 
-.caption h3 {
+.pt-25 {
+    padding-top: 20%
+}
+
+.mt-3 {
+    margin-top: 3rem
+}
+
+.caption h1 {
     color: white;
-    font-size: 3rem;
+    font-size: 6rem;
     font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
     margin: 0 auto;
     padding: .5rem;
     font-weight: 500;
     text-shadow: 2px 2px 3px black;
+    opacity: 1
+}
 
+.caption h2 {
+    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+    padding: .5rem;
+    text-shadow: 2px 2px 3px black;
+}
+
+.services h6 {
+    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: .5rem;
+    margin: 0 auto;
+    text-shadow: 2px 2px 3px black;
+    color: white;
+    width: 80%;
+    line-height: 2rem;
 }
 
 
@@ -201,107 +246,39 @@ article h3 {
     font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
 }
 
-/* Work Section */
-.work-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 2rem;
-    margin: 2rem 5%;
-    justify-content: center;
+/* Experience */
+.experience {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 8vh 0;
+    padding: 0 10%
 }
 
-.work {
-    width: 100%;
-    height: 250px;
-    perspective: 1000px;
-    position: relative;
-  }
-
-  @media (max-width: 450px) {
-    .work {
-      margin-bottom: 1rem
-    }
-  }
-    
-  
-  .work-front,
-  .work-back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transition: transform 1s;
-  }
-  
-  .work-front {
-    z-index: 2;
-  }
-  
-  .work-back {
-    z-index: 1;
-    transform: rotateY(-180deg);
-  }
-  .work:hover .work-front {
-    transform: rotateY(180deg);
-  }
-  
-  .work:hover .work-back {
-    transform: rotateY(0deg);
-  }
-  
-  .work img,
-  .work-back,
-  .work-front {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .work .description {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    padding: 1em;
-    background-color: rgb(126, 5, 126);
-    color: #fff;
-  }
-  
-  .work .description h5 {
-    text-align: center;
-    font-family: 'Roboto-Condensed', Helvetica, sans-serif;
-}
-  
-  .work .description p {
-    margin-top: 1rem;
-    text-align: center;
-  }
-
-
-.fence-item p,
-.inner p,
-.links li {
-    font-family: Arial, Helvetica, sans-serif;
+.experience h5
+{
+    line-height: 3rem;    
 }
 
-.inner h4 {
-    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
-    margin: 5px 0 10px;
-    font-weight: 200;
-    font-size: 2rem
+.container h5 {
+    line-height: 3rem
 }
+
+
+#cta .container {
+    padding: 2rem 0
+}
+
+.container a {
+    margin-top: 2rem
+}
+
+
 
 header a {
     margin-top: 1rem
 }
 
-.info-header {
-    font-size: 2rem;
-}
 
 .button {
     margin-top: 1.5rem
@@ -309,6 +286,14 @@ header a {
 
 .bottom {
     margin-top: 2rem
+}
+
+.contact {
+    min-height: 100vh !important;
+}
+
+.contact-footer{
+   margin-top: auto
 }
 
 

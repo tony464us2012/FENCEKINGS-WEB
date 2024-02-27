@@ -763,7 +763,7 @@ ul.actions.fit.stacked {
 }
 
 #nav>ul>li a {
-	color: #c0c0c0;
+	color: black;
 	text-decoration: none;
 	border: 0;
 	display: block;
@@ -772,10 +772,6 @@ ul.actions.fit.stacked {
 
 #nav>ul>li:first-child {
 	margin-left: 0;
-}
-
-#nav>ul>li:hover a {
-	color: #fff;
 }
 
 #nav>ul>li.current {
@@ -816,7 +812,7 @@ article h3 {
 
 @media (max-width: 768px) {
 	#nav {
-		display: none
+		display: none                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
 	}
 
 	.titleBar a {
@@ -861,13 +857,10 @@ article h3 {
 }
 
 .wrapper.style3 {
-	background-color: #eea825;
-	;
 	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/bg01.png");
 	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/bg01.png");
 	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/bg01.png");
 	background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/bg01.png");
-	color: #fff;
 }
 
 .wrapper.style3 .button {
@@ -980,8 +973,12 @@ article h3 {
 	font-size: 1rem
 }
 
+.main-map {
+	min-height: 80vh;
+}
+
 #map {
-	height: 400px;
+	height: 100%;
 	width: 100%;
 }
 
@@ -1009,8 +1006,12 @@ article h3 {
 
 .menu {
 	width: 80%;
-	margin: 0 10%;
+	margin: 2rem 10%;
 	align-content: center;
+}
+
+.menu p {
+	font-size: small;
 }
 
 
@@ -1092,7 +1093,7 @@ article h3 {
 	/* CTA */
 
 	#cta {
-		padding: 2em 0;
+		padding: 5% 0;
 	}
 
 	/* Footer */
