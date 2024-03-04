@@ -39,6 +39,22 @@
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</div>
+		<ul id="slide-out" class="sidenav">
+			<li><div class="user-view">
+			  <div class="background">
+				<img alt="pic" src="/images/chainlink-pic.jpg"> 
+			  </div>
+			  <a href="#user"><img alt="circle" class="circle" src="/images/chain-5630201.svg"></a>
+			  <a href="#name"><span class="white-text name">John Doe</span></a>
+			  <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+			</div></li>
+			<li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+			<li><a href="#!">Second Link</a></li>
+			<li><div class="divider"></div></li>
+			<li><a class="subheader">Subheader</a></li>
+			<li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+		  </ul>
+		  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 				<div class="main-container pt-25">
 					<div class="caption">
 						<h1 class="light white-text text-lighten-3">Fence Contractor</h1>
@@ -110,6 +126,11 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.sidenav').sidenav();
+		});
+	</script>
 	
 </body>
 
