@@ -31,13 +31,31 @@
 			<div class="logo-container">
 				<img src="/images/logo.png" alt="Fence King Logo" id="logo">
 			</div>
-			<ul class="nav-links text-black">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="services.html">Services</a></li>
-				<li><a href="project.html">Projects</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
+			<div class="navbar" id="myNavbar">
+				<a href="index.html">Home</a>
+				<a href="services.html" class="active">Services</a>
+				<a href="project.html">Projects</a>
+				<a href="contact.html">Contact</a>
+				<a href="javascript:void(0)" data-target="slide-out" class="icon sidenav-trigger" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
 		</div>
+		<ul id="slide-out" class="sidenav">
+			<li><div class="user-view">
+			  <div class="background">
+				<img alt="pic" src="/images/chainlink-pic.jpg"> 
+			  </div>
+			  <a href="#user"><img alt="circle" class="circle" src="/images/chain-5630201.svg"></a>
+			  <a href="#name"><span class="white-text name">John Doe</span></a>
+			  <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+			</div></li>
+			<li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+			<li><a href="#!">Second Link</a></li>
+			<li><div class="divider"></div></li>
+			<li><a class="subheader">Subheader</a></li>
+			<li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+		  </ul>
 		<!-- Main -->
 		<div class="service-container">
 			<div class="service-intro pt-25">
