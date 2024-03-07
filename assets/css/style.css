@@ -45,7 +45,7 @@ body {
   }
 
   .navbar a:hover {
-    background-color: #ddd;
+    background-color: #bef5be;
     color: black;
   }
 
@@ -232,7 +232,8 @@ article h3 {
 
 .experience h5
 {
-    line-height: 3rem;    
+    line-height: 3rem;
+    text-align: center;        
 }
 
 .container h5 {
@@ -311,17 +312,20 @@ header a {
         grid-template-columns: repeat(2, 1fr);
 
     }
+    .sidenav .user-view {
+        position: relative;
+        padding: 32px !important;
+        margin-bottom: 8px;
+    }
 }
 
-@media screen and (max-width: 600px) {
+
+  @media screen and (max-width: 600px) {
     .navbar a:not(:first-child) {display: none;}
     .navbar a.icon {
       float: right;
       display: block;
     }
-  }
-
-  @media screen and (max-width: 600px) {
     .navbar.responsive {position: relative;}
     .navbar.responsive .icon {
       position: absolute;
@@ -333,7 +337,17 @@ header a {
       display: block;
       text-align: left;
     }
-  }
+    .caption h1 {
+        font-size: 4rem
+    }
+    .experience h5 {
+        font-size: 1.4rem;
+    }
+    .services-list ul li{
+        font-size: 1rem
+    }
+}
+
 
 @media (max-width: 425px) {
     .card-container {
